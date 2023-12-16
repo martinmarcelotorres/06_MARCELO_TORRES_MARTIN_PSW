@@ -1,0 +1,25 @@
+server:
+  port: 9898
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/programs
+    username: postgres
+    password: admin
+    pool:
+      enabled: true
+      initial-size: 1
+      max-size: 1
+
+  application:
+    name: programs-microservice
+
+
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}

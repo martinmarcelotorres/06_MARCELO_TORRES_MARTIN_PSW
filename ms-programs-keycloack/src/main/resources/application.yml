@@ -1,0 +1,33 @@
+server:
+  port: 9898
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/programs
+    username: postgres
+    password: admin
+    pool:
+      enabled: true
+      initial-size: 1
+      max-size: 1
+
+  application:
+    name: programs-microservice
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/PRS
+          jwk-set-uri: http://localhost:8080/realms/PRS/protocol/openid-connect/certs
+
+  web:
+    cors:
+      # Configuración CORS específica para tu dominio
+      allowed-origins: "http://localhost:4200"
+      allowed-methods: "GET,POST,PUT,DELETE"
+
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG

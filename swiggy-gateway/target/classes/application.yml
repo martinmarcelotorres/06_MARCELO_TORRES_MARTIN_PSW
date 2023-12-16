@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: SWIGGY-GATEWAY
+
+  cloud:
+    gateway:
+      routes:
+        - id: programs-microservice
+          uri: lb://PROGRAMS-MICROSERVICE
+          predicates:
+            - Path=/v1/programs/**
+          filters:
+            - AuthenticationFilter
+
+        - id: identity-service
+          uri: lb://IDENTITY-SERVICE
+          predicates:
+            - Path=/auth/**
+
+      # Configuración CORS global para Spring Cloud Gateway
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedMethods: "GET,PUT,POST,DELETE,OPTIONS"
+            allowedHeaders: "*"
+            allowCredentials: true
+            maxAge: 3600
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
