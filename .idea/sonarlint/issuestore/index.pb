@@ -1,0 +1,21 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+Œ
+\ms-programs/src/main/java/com/ascencio/dev/springwebfluxapi/SpringWebfluxApiApplication.java,0\e\0e3a7e9b6ef822c4f064611a03de317d500f55ce
+F
+ms-programs/Dockerfile,1\b\1b9adf79dec6c21a6c424b2fabbc7eb0c38996ce
+C
+ms-programs/pom.xml,1\6\169855962d60c3b4b02823fab127b53ec848f375
+‡
+Wms-programs/src/main/java/com/ascencio/dev/springwebfluxapi/web/ProgramsController.java,2\5\252120eb4f29efa4f73ec978f69fb251a88f7d57
+^
+.ms-programs/src/main/resources/application.yml,3\0\300a83e4f676c47251fcf14bd45fb99837054803
+‹
+[ms-programs/src/test/java/com/ascencio/dev/springwebfluxapi/web/ProgramsControllerTest.java,8\3\839f22e088b939786f5d569f465f3ebf3411a5ee
+ˆ
+Xms-programs/src/main/java/com/ascencio/dev/springwebfluxapi/service/ProgramsService.java,2\3\23ae1dcd15fab915a0ad405c44ad49bae1a5e6ab
+†
+Vms-programs/src/main/java/com/ascencio/dev/springwebfluxapi/service/ReportService.java,6\a\6a80c5f93c02916e7ba9eea02b13f0a54e68a6dd
+‘
+ams-programs/src/main/java/com/ascencio/dev/springwebfluxapi/service/impl/ProgramsServiceImpl.java,c\e\ce4680b0b09e7e05684b6ae3996254e05bc17b99
