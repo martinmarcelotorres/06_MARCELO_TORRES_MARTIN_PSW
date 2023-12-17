@@ -8,18 +8,15 @@ import com.ascencio.dev.springwebfluxapi.domain.mapper.ProgramsMapper;
 import com.ascencio.dev.springwebfluxapi.exception.ResourceNotFoundException;
 import com.ascencio.dev.springwebfluxapi.repository.ProgramsRepository;
 import com.ascencio.dev.springwebfluxapi.service.ProgramsService;
-import com.ascencio.dev.springwebfluxapi.service.ReportService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import net.sf.jasperreports.engine.JRException;
+//import net.sf.jasperreports.engine.JRException;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
-import java.io.FileNotFoundException;
 
 import static com.ascencio.dev.springwebfluxapi.domain.mapper.ProgramsMapper.toModel;
 
@@ -29,7 +26,6 @@ import static com.ascencio.dev.springwebfluxapi.domain.mapper.ProgramsMapper.toM
 public class ProgramsServiceImpl implements ProgramsService {
 
     private final ProgramsRepository programsRepository;
-    private final ReportService reportService;
 
     @Override
     public Mono<ProgramsResponseDto> findById(Integer id) {

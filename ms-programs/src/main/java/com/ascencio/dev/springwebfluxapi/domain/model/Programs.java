@@ -24,13 +24,13 @@ public class Programs {
     private String condition;
     private String level;
 
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
-    private LocalDate startDate;
+//    @DateTimeFormat(pattern = "dd-MM-yyyy")
+//    private LocalDate startDate;
+//
+//    @DateTimeFormat(pattern = "dd-MM-yyyy")
+//    private LocalDate endDate;
 
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
-    private LocalDate endDate;
-
-    public Programs(String name, String type, String beneficiary, String responsible, String description, Integer duration, String condition, String level, LocalDate startDate, LocalDate endDate) {
+    public Programs(String name, String type, String beneficiary, String responsible, String description, Integer duration, String condition, String level) {
         this.name = name;
         this.type = type;
         this.beneficiary = beneficiary;
@@ -39,11 +39,9 @@ public class Programs {
         this.duration = duration;
         this.condition = condition;
         this.level = level;
-        this.startDate = startDate;
-        this.endDate = endDate;
     }
 
-    public Programs(Integer id, String name, String type, String beneficiary, String responsible, String description, String condition, Integer duration, String level, LocalDate startDate, LocalDate endDate) {
+    public Programs(Integer id, String name, String type, String beneficiary, String responsible, String description, String condition, Integer duration, String level) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -53,7 +51,5 @@ public class Programs {
         this.condition = condition;
         this.duration = duration;
         this.level = level;
-        this.startDate = startDate;
-        this.endDate = endDate;
     }
 }

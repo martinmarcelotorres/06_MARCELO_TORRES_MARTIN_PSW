@@ -24,13 +24,13 @@ public class ProgramsResponseDto implements Serializable {
    private String condition;
    private String level;
 
-   @JsonFormat(pattern = "dd-MM-yyyy")
-   @DateTimeFormat(pattern = "dd-MM-yyyy")
-   private LocalDate startDate;
-
-   @JsonFormat(pattern = "dd-MM-yyyy")
-   @DateTimeFormat(pattern = "dd-MM-yyyy")
-   private LocalDate endDate;
+//   @JsonFormat(pattern = "dd-MM-yyyy")
+//   @DateTimeFormat(pattern = "dd-MM-yyyy")
+//   private LocalDate startDate;
+//
+//   @JsonFormat(pattern = "dd-MM-yyyy")
+//   @DateTimeFormat(pattern = "dd-MM-yyyy")
+//   private LocalDate endDate;
 
    public ProgramsResponseDto() {
 

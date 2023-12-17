@@ -18,9 +18,7 @@ public class ProgramsMapper {
                 dto.getDescription(),
                 dto.getDuration(),
                 dto.getCondition(),
-                dto.getLevel(),
-                dto.getStartDate(),
-                dto.getEndDate()
+                dto.getLevel()
         );
     }
 
@@ -34,9 +32,7 @@ public class ProgramsMapper {
                 dto.getDescription(),
                 dto.getCondition(),
                 dto.getDuration(),
-                dto.getLevel(),
-                dto.getStartDate(),
-                dto.getEndDate()
+                dto.getLevel()
         );
     }
 
@@ -50,9 +46,7 @@ public class ProgramsMapper {
                 model.getDescription(),
                 model.getDuration(),
                 model.getCondition(),
-                model.getLevel(),
-                model.getStartDate(),
-                model.getEndDate()
+                model.getLevel()
         );
     }
 }

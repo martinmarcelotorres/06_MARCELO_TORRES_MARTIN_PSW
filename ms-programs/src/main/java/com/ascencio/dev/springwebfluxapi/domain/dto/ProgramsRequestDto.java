@@ -21,11 +21,11 @@ public class ProgramsRequestDto implements Serializable {
     private Integer duration;
     private String level;
 
-    @JsonFormat(pattern = "dd-MM-yyyy")
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
-    private LocalDate startDate;
-
-    @JsonFormat(pattern = "dd-MM-yyyy")
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
-    private LocalDate endDate;
+//    @JsonFormat(pattern = "dd-MM-yyyy")
+//    @DateTimeFormat(pattern = "dd-MM-yyyy")
+//    private LocalDate startDate;
+//
+//    @JsonFormat(pattern = "dd-MM-yyyy")
+//    @DateTimeFormat(pattern = "dd-MM-yyyy")
+//    private LocalDate endDate;
 }

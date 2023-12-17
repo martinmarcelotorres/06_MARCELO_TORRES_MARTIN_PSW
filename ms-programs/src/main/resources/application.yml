@@ -3,9 +3,9 @@ server:
 
 spring:
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/programs
+    url: r2dbc:postgresql://localhost:5432/ms-programs
     username: postgres
-    password: admin
+    password: 1234
     pool:
       enabled: true
       initial-size: 1

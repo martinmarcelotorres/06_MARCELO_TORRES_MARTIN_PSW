@@ -1,12 +1,12 @@
 package com.ascencio.dev.springwebfluxapi.web;
 
+import com.ascencio.dev.springwebfluxapi.domain.dto.ProgramsAsignationDto;
 import com.ascencio.dev.springwebfluxapi.domain.dto.ProgramsRequestDto;
 import com.ascencio.dev.springwebfluxapi.domain.dto.ProgramsResponseDto;
 import com.ascencio.dev.springwebfluxapi.service.ProgramsService;
-import com.ascencio.dev.springwebfluxapi.service.ReportService;
 import lombok.RequiredArgsConstructor;
 
-import net.sf.jasperreports.engine.JRException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -14,16 +14,12 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-import java.io.FileNotFoundException;
-
 @RestController
 @RequestMapping("/v1/programs")
 @RequiredArgsConstructor
 public class ProgramsController {
 
 
-    @Autowired
-    private ReportService service;
 
     private final ProgramsService programsService;
 
@@ -54,10 +50,10 @@ public class ProgramsController {
         return this.programsService.create(dto);
     }
 
-    @GetMapping("/report/{format}")
+  /*  @GetMapping("/report/{format}")
     public Mono<String> generateReport(@PathVariable String format) throws FileNotFoundException, JRException {
         return service.generateReport(format);
-    }
+    }*/
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/delete/{id}")
